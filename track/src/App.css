@@ -1,0 +1,33 @@
+html, body #app, .App{
+  height: 100%;
+}
+
+.iframe {
+  border: 1px solid #eee;
+  width: 70%;
+  height: 100%;
+}
+iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tree-node {
+  text-align: left;
+  padding: 12px;
+  width: 30%;
+  height: 100%;
+  border-bottom: 1px solid #eee;
+  overflow: scroll;
+}
+
+.dom-tree {
+  display: flex;
+  height: 60%
+}
+
+.edit-form {
+  padding: 12px;
+  text-align: left
+}
