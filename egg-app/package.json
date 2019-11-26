@@ -1,0 +1,30 @@
+{
+  "name": "egg-app",
+  "version": "1.0.0",
+  "private": true,
+  "egg": {
+    "framework": "fm-egg-plus"
+  },
+  "hostPrefix": "mobile",
+  "scripts": {
+    "start": "npm-run-all --parallel client debug",
+    "client": "fm-script client",
+    "build": "fm-script build",
+    "debug": "egg-bin debug --port=13810  --inspect=9200",
+    "dev": "egg-bin dev",
+    "test": "egg-bin test",
+    "cov": "egg-bin cov"
+  },
+  "dependencies": {
+    "acorn": "^7.1.0",
+    "acorn-jsx": "^5.1.0",
+    "astring-jsx": "^1.0.1",
+    "fm-egg-plus": "^1.1.1",
+    "fs-extra": "^8.1.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.3.5",
+    "egg-mock": "^3.13.1"
+  }
+}

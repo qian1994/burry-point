@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <title><%- typeof title === 'undefined' ? '首页' : title %></title>
+    <meta name="keywords" content="希沃应用" />
+    <meta name="description" content="来自希沃应用，点击可查看详情" />
+    <meta name="format-detection" content="address=no,email=no,telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="http://easinote-dev.test.seewo.com:3000/autoEdit.css">
+    <% include femonitor.html %>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="trackId" style="display: none;"><%= trackId %></div>
+    <script src='/mobile/statics/app.js'></script>
+    <script src="https://cdn.bootcss.com/optimal-select/4.0.1/optimal-select.js"></script>
+    <script src='http://easinote-dev.test.seewo.com:3000/autoEdit.js'></script>
+    <script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+  </body>
+</html>
